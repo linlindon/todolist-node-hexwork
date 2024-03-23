@@ -25,7 +25,7 @@ const requestListener = (req, res) => {
 		res.writeHead(200, headers);
 		res.write(JSON.stringify({
 			"status": "success",
-			"message": todos,
+			"data": todos,
 		}));
 		res.end();
 	} else if (req.url === "/todos" && req.method === "POST") {
@@ -67,7 +67,7 @@ const requestListener = (req, res) => {
 				res.writeHead(200, headers);
 				res.write(JSON.stringify({
 					"status": "success",
-					"data": newTodos,
+					"data": todos,
 				}));
 				res.end();
 			} else {
