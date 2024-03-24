@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "74ac6c6a-19e5-4bf0-9825-91c41e88fe85",
+		"name": "todoList - render",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19604000"
+	},
+	"item": [
+		{
+			"name": "取得所有待辦",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆待辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要洗澡3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-node-hexwork.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-node-hexwork",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-node-hexwork.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-node-hexwork",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-node-hexwork.onrender.com/todos/ed359cd1-8d6a-4dbe-a858-c26692a0e178",
+					"protocol": "https",
+					"host": [
+						"todolist-node-hexwork",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"ed359cd1-8d6a-4dbe-a858-c26692a0e178"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆待辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"已經洗完澡了\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-node-hexwork.onrender.com/todos/82d4311f-869c-4bd8-8dfa-30cdb222d791",
+					"protocol": "https",
+					"host": [
+						"todolist-node-hexwork",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"82d4311f-869c-4bd8-8dfa-30cdb222d791"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
